@@ -32,7 +32,7 @@ class ChoiceInline(admin.StackedInline):
 
 class QuestionAdmin(admin.ModelAdmin):
     inlines = [QuestionInline]
-	list_display = ['content']
+    list_display = ['content']
 
 admin.site.register(Course, CourseAdmin)
 admin.site.register(Lesson, LessonAdmin)
